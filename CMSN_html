@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chúc mừng sinh nhật thầy Nam 🎂</title>
+    <meta name="description" content="Trang chúc mừng sinh nhật dành tặng thầy Nam" />
+    <meta property="og:title" content="Chúc mừng sinh nhật thầy Nam 🎂" />
+    <meta property="og:description" content="Gửi lời chúc tốt đẹp nhất tới thầy Nam!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./thay-nam.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+    <style>
+      :root{
+        --bg: #0f0f12;
+        --card: #18181f;
+        --muted: #a1a1aa;
+        --accent: #ff73c3;
+        --accent2: #7cf7ff;
+        --gold: #ffd166;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+        color:#fff;
+        background: radial-gradient(1200px 600px at 10% 0%, #1c1c27 0%, #0f0f12 60%),
+                    radial-gradient(800px 400px at 90% 20%, #151522 0%, #0f0f12 60%),
+                    #0f0f12;
+        overflow-x:hidden;
+      }
+      header{
+        position:relative;
+        min-height:86vh;
+        display:grid;
+        place-items:center;
+        padding:64px 20px 24px;
+        text-align:center;
+      }
+      .glass{
+        backdrop-filter: blur(10px) saturate(120%);
+        -webkit-backdrop-filter: blur(10px) saturate(120%);
+        background: rgba(24,24,31,0.6);
+        border:1px solid rgba(255,255,255,0.08);
+        box-shadow:0 20px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.05);
+        border-radius:28px;
+        max-width:920px;
+        width:100%;
+        padding:32px 24px;
+      }
+      h1{
+        font-size: clamp(32px, 5vw, 64px);
+        line-height:1.05;
+        margin:0 0 8px;
+        letter-spacing:-0.02em;
+      }
+      .subtitle{
+        color:var(--muted);
+        font-weight:400;
+        margin-bottom:24px;
+      }
+      .hero-img{
+        width:140px;height:140px;border-radius:50%;
+        object-fit:cover; object-position:center;
+        border:4px solid rgba(255,255,255,0.1);
+        box-shadow:0 10px 30px rgba(0,0,0,0.45);
+      }
+      .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 0}
+      .badge{
+        padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.1);
+        background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(0,0,0,0.2));
+        font-size:14px;color:#e5e7eb
+      }
+      .cta{
+        margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap
+      }
+      .btn{
+        appearance:none;border:0;cursor:pointer;
+        padding:14px 18px;border-radius:14px;font-weight:600;font-size:16px;
+        background:linear-gradient(135deg,var(--accent),var(--accent2));
+        color:#0b0b0e; box-shadow:0 10px 25px rgba(124,247,255,0.25);
+        transition:transform .15s ease, box-shadow .15s ease, filter .2s ease;
+      }
+      .btn:hover{transform:translateY(-1px);filter:saturate(110%)}
+      .btn.ghost{
+        background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.2);
+        box-shadow:none
+      }
+
+      .balloons{position:absolute; inset:0; overflow:hidden; pointer-events:none}
+      .balloon{position:absolute; bottom:-20%; width:28px; height:38px; border-radius:50% 50% 45% 55%/55% 55% 45% 45%;
+        opacity:.85; filter:drop-shadow(0 6px 14px rgba(0,0,0,.45)); animation:floatUp linear infinite}
+      .balloon::after{content:""; position:absolute; bottom:-10px; left:50%; width:2px; height:36px; background:rgba(255,255,255,.35)}
+      @keyframes floatUp{from{transform:translateY(0)} to{transform:translateY(-140vh)}}
+
+      .confetti{position:absolute; inset:0; overflow:hidden; pointer-events:none}
+      .confetti i{position:absolute; top:-10px; width:8px; height:14px; border-radius:2px; opacity:.9; animation:fall linear infinite}
+      @keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+
+      section{padding:40px 18px 72px;}
+      .grid{max-width:1080px;margin:0 auto; display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+      .card{background:var(--card); border:1px solid rgba(255,255,255,0.06); border-radius:20px; padding:22px; box-shadow:0 12px 40px rgba(0,0,0,0.35)}
+      .card h3{margin:0 0 10px; font-size:20px}
+      .card p{margin:0;color:#d1d5db}
+      footer{color:var(--muted); text-align:center; padding:24px}
+      .heart{display:inline-block; transform-origin:center; animation:pop 1.2s infinite ease}
+      @keyframes pop{0%,100%{transform:scale(1)} 50%{transform:scale(1.15)}}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="balloons" aria-hidden="true" id="balloons"></div>
+      <div class="confetti" aria-hidden="true" id="confetti"></div>
+
+      <div class="glass">
+        <img class="hero-img" src="./ThayNam_Hello.png" alt="Ảnh thầy Nam" />
+        <h1>Chúc mừng sinh nhật <span style="background:linear-gradient(90deg,var(--gold),#fff);-webkit-background-clip:text;background-clip:text;color:transparent">thầy Nam</span>! 🎉</h1>
+        <p class="subtitle">Chúc thầy Nam ngày càng khỏe mạnh để có thể dạy thêm nhiều lớp tụi em, và chúc những điều tốt đẹp và tuyệt vời nhất sẽ tới với thầy! 🎂✨</p>
+      </div>
+    </header>
+
+    <footer>
+      Made with <span class="heart">💜</span> bởi tập thể học trò gửi tặng thầy Nam.
+      <audio autoplay loop style="display: none;">
+        <source src="./roly-roly.mp3" type="audio/mpeg">
+      </audio>
+    </footer>
+
+    <script>
+      const colors = ["#ff73c3","#7cf7ff","#ffd166","#baffc9","#c8b6ff","#f9c74f","#90be6d","#f8961e"];
+      const balloons = document.getElementById('balloons');
+      const confetti = document.getElementById('confetti');
+
+      const make = (el, count, builder) => { for(let i=0;i<count;i++){ const n=document.createElement(el); builder(n,i); } };
+
+      make('span', 28, (b,i)=>{
+        b.className='balloon';
+        const size = 24 + Math.random()*28;
+        b.style.width = size+'px';
+        b.style.height = (size*1.4)+'px';
+        b.style.left = (Math.random()*100)+'%';
+        b.style.background = `linear-gradient(180deg, ${colors[i%colors.length]}, #ffffff20)`;
+        b.style.animationDuration = (14 + Math.random()*10)+'s';
+        b.style.animationDelay = (-Math.random()*14)+'s';
+        balloons.appendChild(b);
+      });
+
+      make('i', 120, (c,i)=>{
+        c.style.left = (Math.random()*100)+'%';
+        c.style.background = colors[i%colors.length];
+        c.style.animationDuration = (5 + Math.random()*6)+'s';
+        c.style.animationDelay = (-Math.random()*5)+'s';
+        confetti.appendChild(c);
+      });
+    </script>
+  </body>
+</html>
